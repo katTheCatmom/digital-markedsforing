@@ -1,0 +1,98 @@
+#grid-area {
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 300px);
+
+
+    #mage {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        height: 300px;
+        width: 300px;
+        
+    }
+
+    #darkBlue {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: #0f3c5c;
+        
+    }
+
+    #blue {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: #1e9af3;
+    }
+
+    #lightBlue {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: #61bdff;
+    }
+
+    #witch {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+       
+        
+        
+        height: 300px;
+        
+    }
+    #darkPurple {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: #801b65;
+    }
+
+    #purple {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: #e11282;
+    }
+
+    #lightPurple {
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        background-color: #ff6dbb;
+    }
+
+    /*
+    skin color: #ebb49b
+    skin shadow: #e09e82
+
+    light brown: #9e5431
+    medium brown: #612d14
+    dark brown: #261107
+
+    beard light: #f7f9fa
+    beard dark: #aeb4b8
+
+    dark red: #94001e
+    red: #d6002e
+
+    light blonde: #ffd829
+    blonde: #ffd000
+    dark blonde: d1a700
+
+    */
+}
