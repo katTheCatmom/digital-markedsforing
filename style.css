@@ -76,16 +76,151 @@
         background-color: #ff6dbb;
     }
 
+    #sub-grid1 {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+        grid-template-rows: repeat(4, auto);
+
+        .skin-color {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+            background-color: #ebb49b;
+        }
+
+        .light-brown {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+            background-color: #9e5431;
+        }
+
+        .medium-brown {
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+            background-color: #612d14;
+        }
+
+        .dark-brown {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+
+            background-color: #261107;
+        }
+
+        .beard-light {
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+
+            background-color:  #f7f9fa;
+        }
+
+        .beard-dark {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+
+            background-color: #aeb4b8;
+        }
+    }
+
+    #sub-grid2 {
+        grid-column-start: 5;
+        grid-column-end: 6;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        grid-template-rows: repeat(5, auto);
+
+        
+        .skin-color {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+            background-color: #ebb49b;
+        }
+
+        .skin-shadow {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+            background-color: #e09e82;
+        }
+
+        .light-brown {
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+            background-color: #9e5431;
+        }
+
+        .medium-brown {
+            grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start: 2;
+            grid-row-end: 3;
+
+            background-color: #612d14;
+        }
+
+        .light-blonde {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 3;
+            grid-row-end: 4;
+
+            background-color: #ffd829;
+        }
+
+        .blonde {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+
+            background-color: #ffd000;
+        }
+
+        .dark-blonde {
+            grid-column-start: 4;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+
+            background-color: #d1a700;
+        }
+    }
+
+
+   
+
     /*
-    skin color: #ebb49b
-    skin shadow: #e09e82
-
-    light brown: #9e5431
-    medium brown: #612d14
-    dark brown: #261107
-
-    beard light: #f7f9fa
-    beard dark: #aeb4b8
+    
 
     dark red: #94001e
     red: #d6002e
