@@ -1,3 +1,40 @@
+                                                            /*Skjema (index.html)*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+}
+
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+}   
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: ;
+
+    ol, ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    #gender {
+        li {
+            input {
+
+            }
+        }
+    }
+}
+
+
+
+                                                             /*Farge-palett*/
 #grid-area {
     display: grid;
 

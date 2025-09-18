@@ -7,53 +7,84 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="grid-area">
-        <img id="mage" src="pics/Mage/mage500x500.png">
-        <div id="darkBlue"></div>
-        <div id="blue"></div>
-        <div id="lightBlue"></div>
+    <div id="container">
+        <header>
+            <p>Logo</p>
+        </header>
 
-        <img id="witch" src="pics/witch/witch-700x980.png">
-        <div id="darkPurple"></div>
-        <div id="purple"></div>
-        <div id="lightPurple"></div>
+        <main>
+            <h1>Finn Din Nerd - Påmelding</h1>
+          
+            <form>
+                <p>Kjønn*</p>
+                <ul id="gender">
+                    <li>
+                        <input type="radio" name="kjonn" id="female" required>
+                        <label for="female">Kvinne</label>
+                    </li>
+                     <li>
+                        <input type="radio" name="kjonn" id="male" required>
+                        <label for="male">Mann</label>
+                    </li>
+                     <li>
+                        <input type="radio" name="kjonn" id="hen" required>
+                        <label for="hen">Hen</label>
+                    </li>
+                     <li>
+                        <input type="radio" name="kjonn" id="unknown" required>
+                        <label for="unknown">Annet / Ønsker ikke å oppgi</label>
+                    </li>
+                </ul>
+                <p>Alder*</p>
+                <ol id="age">
+                    <li>
+                        <input type="radio" name="alder" id="18-25" required>
+                        <label for="18-25">18-25</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="alder" id="25-34">
+                        <label for="lower-medium">25-34</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="alder" id="35-39">
+                        <label for="medium">35-39</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="alder" id="40">
+                        <label for="high">40+</label>
+                    </li>
+                </ol>
+                <label for="fornavn">
+                    Fornavn*
+                    <input type="text" name="fnanvn" id="fornavn" placeholder="Nora*" pattern="[A-Za-zæøåÆØÅ]{2,}" required>
+                </label> 
+                <label for="etternavn">
+                    Etternavn*
+                    <input type="text" name="enavn" id="etternavn" placeholder="Nordmann" maxlength="45" pattern="[A-Za-zæøåÆØÅ]{2,}" required>
+                </label>
+                <label for="epost">
+                    E-post*
+                    <input type="email" name="email" id="epost" placeholder="Noranordmann@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                </label>
 
-        <div id="sub-grid1">
-            <div class="skin-color"></div>
+                <label for="telefonnr">
+                    Telefon
+                    <input type="tel" name="telefonnummer" id="telefonnr" placeholder="+47 12***678" pattern="[0-9]{8,12}">
+                </label>
 
-            <div class="light-brown"></div>
-            <div class="medium-brown"></div>
-            <div class="dark-brown"></div>
+                <label for="interest">
+                    Interesser
+                    <textarea name="melding" id="interest" placeholder="F.eks.: Magic The Gathering, RPG, Anime, Brettspill ..." rows="5" cols="25"></textarea>
+                </label>
 
-            <div class="beard-light"></div>
-            <div class="beard-dark"></div>
-        </div>
+                <label for="vilkaar">
+                    <input type="checkbox" id="vilkaar" required>
+                    Jeg bekrefter at jeg er over 18 år.
+                </label>
 
-        <div id="sub-grid2">
-            <div class="skin-color"></div>
-            <div class="skin-shadow"></div>
-
-            <div class="light-brown"></div>
-            <div class="medium-brown"></div>
-
-            <div class="light-blonde"></div>
-            <div class="blonde"></div>
-            <div class="dark-blonde"></div>
-        </div>
-
-        <div class="skin-color"></div>
-        <div class="skin-shaddow"></div>
-
-        <div class="light-brown"></div>
-        <div class="medium-brown"></div>
-        <div class="dark-brown"></div>
-
-        <div class="beard-light"></div>
-        <div class="beard-dark"></div>
-        
-        <div class="light-blonde"></div>
-        <div class="blonde"></div>
-        <div class="dark-blonde"></div>
+                <input type="submit" value="Send inn" class="btn">
+            </form>
+        </main>
     </div>
 </body>
 </html>
