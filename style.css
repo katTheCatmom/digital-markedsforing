@@ -16,19 +16,41 @@ form {
     display: flex;
     flex-direction: column;
     border: 2px solid black;
-    padding: ;
+    padding: 2rem;
+   
 
-    ol, ul {
-        list-style: none;
-        padding: 0;
-    }
+    section {
+        border: 2px solid black;
+        padding: 1rem;
+        margin-bottom: 2rem;
 
-    #gender {
-        li {
-            input {
+        ol, ul {
+            list-style: none;
+            padding: 0;    
+        }
 
+        #gender {
+            li {
+                input {
+
+                }
             }
         }
+    }
+
+    .input-field {
+        display: block;
+        margin-bottom: 2rem;
+        input {
+            width: 100%;
+            padding: 1rem;
+        }
+    }
+
+    .btn {
+        padding: 2rem;
+        font-size: large;
+        width: 50%;
     }
 }
 

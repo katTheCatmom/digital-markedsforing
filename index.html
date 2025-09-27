@@ -13,61 +13,75 @@
         </header>
 
         <main>
+            
+            <h1>MASSE INFO og HYPE OM ARRANGEMENTET!!!</h1>
+            <p>Også ser man påmeldingen som en liten teaser lengre ned</p>
+            <p>For første gang inviterer Outland Fredrikstad til Valentines-treff! 
+                
+            </p>
+            
+            
+            
             <h1>Finn Din Nerd - Påmelding</h1>
           
             <form>
-                <p>Kjønn*</p>
-                <ul id="gender">
-                    <li>
-                        <input type="radio" name="kjonn" id="female" required>
-                        <label for="female">Kvinne</label>
-                    </li>
-                     <li>
-                        <input type="radio" name="kjonn" id="male" required>
-                        <label for="male">Mann</label>
-                    </li>
-                     <li>
-                        <input type="radio" name="kjonn" id="hen" required>
-                        <label for="hen">Hen</label>
-                    </li>
-                     <li>
-                        <input type="radio" name="kjonn" id="unknown" required>
-                        <label for="unknown">Annet / Ønsker ikke å oppgi</label>
-                    </li>
-                </ul>
-                <p>Alder*</p>
-                <ol id="age">
-                    <li>
-                        <input type="radio" name="alder" id="18-25" required>
-                        <label for="18-25">18-25</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="alder" id="25-34">
-                        <label for="lower-medium">25-34</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="alder" id="35-39">
-                        <label for="medium">35-39</label>
-                    </li>
-                    <li>
-                        <input type="radio" name="alder" id="40">
-                        <label for="high">40+</label>
-                    </li>
-                </ol>
-                <label for="fornavn">
+                <section>
+                    <p>Kjønn*</p>
+                    <ul id="gender">
+                        <li>
+                            <input type="radio" name="kjonn" id="female" required>
+                            <label for="female">Kvinne</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="kjonn" id="male" required>
+                            <label for="male">Mann</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="kjonn" id="hen" required>
+                            <label for="hen">Hen</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="kjonn" id="unknown" required>
+                            <label for="unknown">Annet / Ønsker ikke å oppgi</label>
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <p>Alder*</p>
+                    <ol id="age">
+                        <li>
+                            <input type="radio" name="alder" id="18-25" required>
+                            <label for="18-25">18-25</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="alder" id="25-34">
+                            <label for="lower-medium">25-34</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="alder" id="35-39">
+                            <label for="medium">35-39</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="alder" id="40">
+                            <label for="high">40+</label>
+                        </li>
+                    </ol>
+                </section>
+                <label for="fornavn" class="input-field">
                     Fornavn*
                     <input type="text" name="fnanvn" id="fornavn" placeholder="Nora*" pattern="[A-Za-zæøåÆØÅ]{2,}" required>
                 </label> 
-                <label for="etternavn">
+                <label for="etternavn" class="input-field">
                     Etternavn*
                     <input type="text" name="enavn" id="etternavn" placeholder="Nordmann" maxlength="45" pattern="[A-Za-zæøåÆØÅ]{2,}" required>
                 </label>
-                <label for="epost">
+                <label for="epost" class="input-field">
                     E-post*
                     <input type="email" name="email" id="epost" placeholder="Noranordmann@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
                 </label>
 
-                <label for="telefonnr">
+                <label for="telefonnr" class="input-field">
                     Telefon
                     <input type="tel" name="telefonnummer" id="telefonnr" placeholder="+47 12***678" pattern="[0-9]{8,12}">
                 </label>
