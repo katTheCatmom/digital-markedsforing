@@ -4,55 +4,211 @@
 }
 
 body {
-    font-family: "roboto", sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000;
 }
 
 #container {
     max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, auto);
 }   
 
-form {
-    display: flex;
-    flex-direction: column;
-    border: 2px solid black;
-    padding: 2rem;
-   
+h1, h2, p, li, label {
+    color: #fff;
+    margin: 0;
+}
 
-    section {
-        border: 2px solid black;
-        padding: 1rem;
-        margin-bottom: 2rem;
+header {
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
 
-        ol, ul {
-            list-style: none;
-            padding: 0;    
+#heading {
+    grid-column: 1/5;
+    grid-row: 2/3;
+    margin: 3rem;
+    h1 {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        font-size: 250%;
+
+        img {
+            width: 46px;
+            height: 44px;
         }
-
-        #gender {
-            li {
-                input {
-
-                }
-            }
-        }
-    }
-
-    .input-field {
-        display: block;
-        margin-bottom: 2rem;
-        input {
-            width: 100%;
-            padding: 1rem;
-        }
-    }
-
-    .btn {
-        padding: 2rem;
-        font-size: large;
-        width: 50%;
     }
 }
+
+main {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    font-size: large;
+    p {
+        margin-bottom: 2rem;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+    }
+    span {
+        font-weight: 700;
+    }
+
+    #bottom {
+        margin-top: 2rem;
+        padding-bottom: 5rem;
+        border-bottom: 5px solid white;
+    }
+}
+
+#aside1 {
+    grid-column: 1/2;
+    grid-row: 3/4 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    #dragon {
+        width: 300px;
+        position: absolute;
+        z-index: 1;
+    }
+    .heartRain {
+        width: 100px;
+        position: absolute;
+        z-index: 0;
+    }
+}
+
+#aside2 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 100px;
+        margin-bottom: 10px;
+    }
+}
+
+.left {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    position: relative;
+    #witch-fornavn, #witch-etternavn, #witch-epost, #witch-telefon, #witch-interesse {   
+        position: absolute;
+        display: none;
+
+        left: 270px;
+        height: 95px;
+        transform: scaleX(-1);
+    }
+
+    #witch-fornavn {
+        top: 58px;
+    }
+
+    #witch-etternavn {
+        top: 162px;
+    }
+
+    #witch-epost {
+        top: 263px;
+    }
+
+    #witch-telefon {
+        top: 367px;
+    }
+
+    #witch-interesse {
+        top: 502px;
+    }
+    
+}
+
+.right {
+    grid-column: 4/5;
+    grid-row: 4/5;
+    #mage-fornavn, #mage-etternavn, #mage-epost, #mage-telefon, #mage-interesse {
+        position: absolute;
+        display: none;
+
+        right: 935px;
+        height: 80px;
+    }
+
+    #mage-fornavn {
+        top: 1385px;
+    }
+
+    #mage-etternavn {
+        top: 1490px;
+    }
+
+    #mage-epost {
+        top: 1590px;
+    }
+
+    #mage-telefon {
+        top: 1693px;
+    }
+
+    #mage-interesse {
+        top: 1830px;
+    }
+}
+
+#pamelding {
+    grid-column: 2/4;
+    grid-row: 4/5;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid black;
+        padding: 2rem;
+       
+        .input-field {
+            margin-bottom: 2rem;
+            
+            input {
+                width: 100%;
+                padding: 1rem;
+            }
+        }
+        textarea {
+            width: 100%;
+        }
+
+        #vilkaar {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            padding: 1rem;
+            font-size: large;
+            width: 100%;
+        }
+    }
+}
+
+
 
 
 

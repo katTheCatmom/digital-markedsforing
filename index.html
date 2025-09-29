@@ -9,69 +9,111 @@
 <body>
     <div id="container">
         <header>
-            <p>Logo</p>
+            <a href="index.html"><img src="pics/Outland-Logo.png" alt=""></a>
         </header>
 
-        <main>
-            
-            <h1>MASSE INFO og HYPE OM ARRANGEMENTET!!!</h1>
-            <p>Også ser man påmeldingen som en liten teaser lengre ned</p>
-            <p>For første gang inviterer Outland Fredrikstad til Valentines-treff! 
-                
-            </p>
-            
-            
-            
+        <section id="heading">
+            <h1>
+                <img src="pics/Heart/23x22.png" alt="">
+                Finn Din Nerd - Outland Fredrikstad
+                <img src="pics/Heart/23x22.png" alt="">
+            </h1>
+        </section>
+
+        <main> 
+            <section>
+                <p>
+                    Er du klar for å finne din ultimate Player 2?
+                    På selveste Valentines Day inviterer Outland Fredrikstad deg til en kveld fylt med nerdete kjærlighet, 
+                    spillglede og muligheten til å finne noen med akkurat de samme interessene som deg!
+                </p>
+                <article>
+                    <h2>
+                        Hva kan du forvente?
+                    </h2>
+                    <ul>
+                        <li>
+                            <span>Speed Friending:</span> Møt nye mennesker med samme nerdete lidenskaper som du!
+                            Enten det er spill, manga, eller sci-fi - vi har noe for alle.
+                        </li>
+                        <li>
+                            <span>Konkurranser og Priser:</span> Delta i cosplay-konkurranse og quiz for å vinne fantastiske premier.
+                        </li>
+                        <li>
+                            <span>Eksklusive Rabatter:</span> Benytt deg av spesialtilbud på varer i butikken kun denne kvelden!
+                        </li>
+                        <li>
+                            <span>Snacks og Drikke:</span> Nyt noe av det spennende utvalget av snacks og drikke vi har å tilby!
+                        </li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h2> Hvorfor delta?</h2>
+                    <ul>
+                        <li>
+                            Møt likesinnede og skap nye vennskap eller kanskje til og med finne din
+                            spesielle "Nerd in Shining Armor".
+                        </li>
+                        <li>
+                            En perfekt anledning til å feire kjærligheten til alt nerdete.
+                        </li>
+                        <li>
+                            En kveld du ikke vil gå glipp av - garantert hyggelig og full av overraskelser!
+                        </li>
+                    </ul>
+                </article>
+
+                <article>
+                    <h2>Praktisk info</h2>
+                    <ul>
+                        <li>Dato: 14.februar</li>
+                        <li>Tid: 18:00 - 22:00</li>
+                        <li>Sted: Outland Fredrikstad</li>
+                    </ul>
+                </article>
+
+                <p id="bottom">Er du klar for å trykke 'Start'? Meld deg på nå og sikre deg en plass på det mest unike Valentines-arrangementet i byen!</p>
+            </section>
+        </main>
+
+        <aside id="aside1">
+            <!--BILDER LANGS SIDEN-->
+            <img src="pics/Dragon.png" id="dragon" alt="">
+            <img src="pics/heartrainR.png" class="heartRain" alt="">
+        </aside>
+
+        <aside id="aside2">
+            <img src="pics/heartrain.png" alt=""> 
+        </aside>
+
+
+        <aside class="left">
+            <img src="pics/witch/witch-50x70.png" alt="" id="witch-fornavn">
+            <img src="pics/witch/witch-50x70.png" alt="" id="witch-etternavn">
+            <img src="pics/witch/witch-50x70.png" alt="" id="witch-epost">
+            <img src="pics/witch/witch-50x70.png" alt="" id="witch-telefon">
+            <img src="pics/witch/witch-50x70.png" alt="" id="witch-interesse">
+        </aside>
+        <aside class="right">
+            <img src="pics/Mage/60x65.png" alt="" id="mage-fornavn">
+            <img src="pics/Mage/60x65.png" alt="" id="mage-etternavn">
+            <img src="pics/Mage/60x65.png" alt="" id="mage-epost">
+            <img src="pics/Mage/60x65.png" alt="" id="mage-telefon">
+            <img src="pics/Mage/60x65.png" alt="" id="mage-interesse">
+        </aside>
+
+
+
+        <section id="pamelding">
             <h1>Finn Din Nerd - Påmelding</h1>
           
             <form>
-                <section>
-                    <p>Kjønn*</p>
-                    <ul id="gender">
-                        <li>
-                            <input type="radio" name="kjonn" id="female" required>
-                            <label for="female">Kvinne</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="kjonn" id="male" required>
-                            <label for="male">Mann</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="kjonn" id="hen" required>
-                            <label for="hen">Hen</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="kjonn" id="unknown" required>
-                            <label for="unknown">Annet / Ønsker ikke å oppgi</label>
-                        </li>
-                    </ul>
-                </section>
-
-                <section>
-                    <p>Alder*</p>
-                    <ol id="age">
-                        <li>
-                            <input type="radio" name="alder" id="18-25" required>
-                            <label for="18-25">18-25</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="alder" id="25-34">
-                            <label for="lower-medium">25-34</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="alder" id="35-39">
-                            <label for="medium">35-39</label>
-                        </li>
-                        <li>
-                            <input type="radio" name="alder" id="40">
-                            <label for="high">40+</label>
-                        </li>
-                    </ol>
-                </section>
                 <label for="fornavn" class="input-field">
                     Fornavn*
                     <input type="text" name="fnanvn" id="fornavn" placeholder="Nora*" pattern="[A-Za-zæøåÆØÅ]{2,}" required>
                 </label> 
+                    
                 <label for="etternavn" class="input-field">
                     Etternavn*
                     <input type="text" name="enavn" id="etternavn" placeholder="Nordmann" maxlength="45" pattern="[A-Za-zæøåÆØÅ]{2,}" required>
@@ -98,7 +140,8 @@
 
                 <input type="submit" value="Send inn" class="btn">
             </form>
-        </main>
+        </section>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
