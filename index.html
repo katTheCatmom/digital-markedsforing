@@ -88,56 +88,60 @@
         </aside>
 
 
+        <!--
         <aside class="left">
-            <img src="pics/witch/witch-50x70.png" alt="" id="witch-fornavn">
-            <img src="pics/witch/witch-50x70.png" alt="" id="witch-etternavn">
-            <img src="pics/witch/witch-50x70.png" alt="" id="witch-epost">
-            <img src="pics/witch/witch-50x70.png" alt="" id="witch-telefon">
-            <img src="pics/witch/witch-50x70.png" alt="" id="witch-interesse">
+              
         </aside>
         <aside class="right">
-            <img src="pics/Mage/60x65.png" alt="" id="mage-fornavn">
-            <img src="pics/Mage/60x65.png" alt="" id="mage-etternavn">
-            <img src="pics/Mage/60x65.png" alt="" id="mage-epost">
-            <img src="pics/Mage/60x65.png" alt="" id="mage-telefon">
-            <img src="pics/Mage/60x65.png" alt="" id="mage-interesse">
+     
         </aside>
-
+        -->
 
 
         <section id="pamelding">
-            <h1>Finn Din Nerd - Påmelding</h1>
+            <h2>Finn Din Nerd - Påmelding</h2>
           
             <form>
-                <label for="fornavn" class="input-field">
+                <img src="pics/witch/witch-50x70.png" alt="" id="witch-fornavn">
+                <label for="fornavn" id="input-field1">
                     Fornavn*
                     <input type="text" name="fnanvn" id="fornavn" placeholder="Nora*" pattern="[A-Za-zæøåÆØÅ]{2,}" required>
                 </label> 
+                <img src="pics/Mage/60x65.png" alt="" id="mage-fornavn">
                     
-                <label for="etternavn" class="input-field">
+                <img src="pics/witch/witch-50x70.png" alt="" id="witch-etternavn">
+                <label for="etternavn" id="input-field2">
                     Etternavn*
-                    <input type="text" name="enavn" id="etternavn" placeholder="Nordmann" maxlength="45" pattern="[A-Za-zæøåÆØÅ]{2,}" required>
+                    <input type="text" name="enavn" id="etternavn" placeholder="Nordmann" maxlength="45" pattern="[A-Za-zæøåÆØÅ]{2,}" required> 
                 </label>
-                <label for="epost" class="input-field">
+                <img src="pics/Mage/60x65.png" alt="" id="mage-etternavn">
+
+                <img src="pics/witch/witch-50x70.png" alt="" id="witch-epost">
+                <label for="epost" id="input-field3">
                     E-post*
                     <input type="email" name="email" id="epost" placeholder="Noranordmann@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
                 </label>
+                <img src="pics/Mage/60x65.png" alt="" id="mage-epost">
 
-                <label for="telefonnr" class="input-field">
+                <img src="pics/witch/witch-50x70.png" alt="" id="witch-telefon">
+                <label for="telefonnr" id="input-field4">    
                     Telefon
                     <input type="tel" name="telefonnummer" id="telefonnr" placeholder="+47 12***678" pattern="[0-9]{8,12}">
                 </label>
+                <img src="pics/Mage/60x65.png" alt="" id="mage-telefon">
 
-                <label for="interest">
+                <img src="pics/witch/witch-50x70.png" alt="" id="witch-interesse">
+                <label for="interest" id="input-field5">         
                     Interesser
                     <textarea name="melding" id="interest" placeholder="F.eks.: Magic The Gathering, RPG, Anime, Brettspill ..." rows="5" cols="25"></textarea>
                 </label>
+                <img src="pics/Mage/60x65.png" alt="" id="mage-interesse">
 
-                <label for="vilkaar">
+                <label for="vilkaar" id="terms">
                     <input type="checkbox" id="vilkaar" required>
                     Jeg bekrefter at jeg er over 18 år.
                 </label>
-                <label for="kundeklubb">
+                <label for="kundeklubb" id="account">
                     <input type="checkbox" id="kundeklubb">
                     Ja takk, jeg vil også melde meg inn i kundeklubben.
                 </label>
