@@ -80,18 +80,19 @@ main {
     grid-row: 3/4 ;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
     #dragon {
-        width: 300px;
+        width: 200px;
         position: absolute;
+        margin-top: 5rem;
         z-index: 1;
     }
-    .heartRain {
+    /*.heartRain {
         width: 100px;
         position: absolute;
         z-index: 0;
-    }
+    }*/
 }
 
 #aside2 {
@@ -149,28 +150,28 @@ main {
         position: absolute;
         display: none;
 
-        right: 935px;
+        right: 595px;
         height: 80px;
     }
 
     #mage-fornavn {
-        top: 1385px;
+        top: 1360px;
     }
 
     #mage-etternavn {
-        top: 1490px;
+        top: 1460px;
     }
 
     #mage-epost {
-        top: 1590px;
+        top: 1563px;
     }
 
     #mage-telefon {
-        top: 1693px;
+        top: 1665px;
     }
 
     #mage-interesse {
-        top: 1830px;
+        top: 1795px;
     }
 }
 
@@ -197,8 +198,11 @@ main {
         }
 
         #vilkaar {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+            margin-top: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        #kundeklubb {
+            margin-bottom: 2.5rem;
         }
         .btn {
             padding: 1rem;
