@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- Font Awesome -->
+    <link href="ikoner/css/fontawesome.css" rel="stylesheet"> 
+    <link href="ikoner/css/brands.css" rel="stylesheet">
+    <link href="ikoner/css/solid.css" rel="stylesheet">
+    <link href="ikoner/css/regular.css" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -13,11 +20,8 @@
         </header>
 
         <section id="heading">
-            <h1>
-                <img src="pics/Heart/23x22.png" alt="">
-                Finn Din Nerd - Outland Fredrikstad
-                <img src="pics/Heart/23x22.png" alt="">
-            </h1>
+          <img src="pics/heading.png" alt="Finn Din Nerd">
+          <a href="#pamelding"><i class="fa-solid fa-arrow-down"></i> Meld deg på nå! <i class="fa-solid fa-arrow-down"></i></a>
         </section>
 
         <main> 
@@ -65,7 +69,10 @@
                     </ul>
                     <img id="mobileHeart" src="pics/heartrainLiggende.png" alt="">
                 </article>
-
+                <article id="unoArticle">
+                    <img class="uno" src="pics/uno.jpg" alt="">
+                    <img class="uno" src="pics/unoparty.jpg" alt="">
+                </article>
                 <article>
                     <h2>Praktisk info</h2>
                     <ul>
@@ -115,14 +122,14 @@
                 <img src="pics/witch/witch-50x70.png" alt="" id="witch-etternavn">
                 <label for="etternavn" id="input-field2">
                     Etternavn*
-                    <input type="text" name="enavn" id="etternavn" placeholder="Nordmann" maxlength="45" pattern="[A-Za-zæøåÆØÅ]{2,}" required> 
+                    <input type="text" name="enavn" id="etternavn" placeholder="Nordmann*" maxlength="45" pattern="[A-Za-zæøåÆØÅ]{2,}" required> 
                 </label>
                 <img src="pics/Mage/60x65.png" alt="" id="mage-etternavn">
 
                 <img src="pics/witch/witch-50x70.png" alt="" id="witch-epost">
                 <label for="epost" id="input-field3">
                     E-post*
-                    <input type="email" name="email" id="epost" placeholder="Noranordmann@hiof.no" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+                    <input type="email" name="email" id="epost" placeholder="Noranordmann@hiof.no*" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
                 </label>
                 <img src="pics/Mage/60x65.png" alt="" id="mage-epost">
 
